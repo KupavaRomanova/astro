@@ -1,0 +1,19 @@
+---
+const links = [
+  { text: 'О себе', href: '/' },
+  { text: 'Достижения', href: '/achievement' },
+  { text: 'Увлечения', href: '/hobby' },
+  { text: 'Мемы', href: '/memes' },
+];
+---
+<header class="bg-rose-300 text-lg w-full  px-4 sm:px-8">
+  <nav >
+    <ul class="flex flex-row justify-around place-items-center text-lg py-3  text-orange-950 gap-4">
+      {links.map((link) => (
+        <li>
+          <a href={link.href}>{link.text}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>

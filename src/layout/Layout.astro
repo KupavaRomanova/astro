@@ -1,0 +1,25 @@
+---
+import Header from "../components/Header.astro";
+const fon = '../../public/wave.svg';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" /> 
+		<meta name="generator" content={Astro.generator} /> 
+		 <title>Astro</title>
+	</head>
+	<body>
+        
+		<Header />
+        <slot />
+		<!-- <div class="absolute bottom-0 w-full mt-auto"> 
+			<img src={fon}  />
+		</div> -->
+		<div class="absolute w-full mt-auto"> 
+			<img src={fon}  />
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+---
+import Layout from "../layout/Layout.astro";
+const photo1 = '../../public/photo1.jpg';
+const photo2 = '../../public/photo2.jpg';
+const photo3 = '../../public/photo3.png';
+const photo4 = '../../public/photo4.jpg';
+// const photo5 = '../../public/photo1.jpg';
+
+---
+
+<Layout> 
+    <div class="flex flex-col justify-center items-center px-8 py-8 font-sans">
+        <div class="flex flex-col sm:flex-row justify-center items-center mb-8">
+            <img class="w-full size-96 sm:w-1/2  rounded-2xl sm:rounded-2xl mb-4 sm:mb-0 sm:mr-8" src={photo1}/>
+            <div class="flex flex-col">
+                <p class="font-semibold text-lg">Вязание</p>
+                <p class="w-full text-lg">  Я люблю вязать. Это мое любимое хобби, которое я стараюсь делать каждый день. Мне нравится, что вязание позволяет мне создавать красивые и полезные вещи своими руками. Я могу вязать одежду, аксессуары, игрушки, украшения для дома и многое другое. Кроме того, вязание помогает мне расслабиться и отвлечься от повседневных забот.</p>
+            </div>
+            
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center">
+            <div class="flex flex-col">
+                <p class="font-semibold text-lg">Рисование</p>
+                <p class="w-full text-lg">  Еще одно мое хобби - рисование. Я люблю рисовать пейзажи, натюрморты, животных. Мне нравится, что рисование позволяет мне выразить себя и свою индивидуальность. Кроме того, рисование помогает мне развивать воображение и креативность, а также улучшает настроение и способствует расслаблению. </p>
+            </div>
+            <img class=" py-2 w-full size-96 sm:w-1/2  rounded-2xl sm:rounded-2xl mb-4 sm:mb-0 sm:mr-8" src={photo2}/>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center">
+            <img class=" py-2 w-full size-96 sm:w-1/2  rounded-2xl sm:rounded-2xl mb-4 sm:mb-0 sm:mr-8" src={photo3}/>
+            <div>
+                <p class="font-semibold text-lg">Манга</p>
+                <p class="w-full text-lg">  Первой мангой, которую я прочитала была "Токийские мстители". У меня в телефоне даже есть отдельная папка со смешными лицами, которые делал гланый герой.</p>
+            </div>    
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center">
+            <div>
+                <p class="font-semibold text-lg">Новелла</p>
+                <p class="w-full text-lg">  Новелла "Благословение небожителей" - это одно из моих любимых произведений. Мне нравится, что новелла отличается красивым языком и глубоким смыслом. У меня есть коллекция из всех 6 томов.</p>
+            </div>
+            <img class=" py-2 w-full size-96 sm:w-1/2  rounded-2xl sm:rounded-2xl mb-4 sm:mb-0 sm:mr-8" src={photo4}/>
+        </div>
+    </div>
+
+</Layout>

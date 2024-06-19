@@ -1,0 +1,21 @@
+---
+
+// MainSection.astro
+const image = '../../public/photo.jpg';
+const fon = '../../public/wave.svg';
+const title = 'Главная';
+const description = 'Здравствуйте! Меня зовут Романова Купава, мне 22 года. Я люблю творчество в различных формах и проявлениях. Рисование, лепка из глины и вязание - это мои любимые хобби, которые позволяют мне выразить себя и расслабиться. В последнее время я также глубоко погрузилась в азиатскую культуру, включая аниме, дорамы, k-pop и китайские гача-игры. Это приносит мне настоящее удовольствие и вдохновение. Возможно стоило поступать на востоковеда, а не программиста...';
+---
+
+<section>
+   
+  <div class="flex justify-center items-center py-8 px-8">
+    <div class="flex flex-col sm:flex-row justify-center items-center  w-full sm:w-4/5 max-w-6xl mb-4">
+      <img class="w-full size-96 sm:w-1/2  rounded-2xl sm:rounded-2xl mb-4 sm:mb-0 sm:mr-8" src={image} alt={title} />
+      <div>
+        <!-- <h1>{title}</h1> -->
+        <p class="w-full font-sans text-lg">{description}</p>
+      </div>
+    </div>
+  </div>
+</section>
